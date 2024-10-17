@@ -10,7 +10,8 @@ env:
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: YOUR-SUBS-ID
   WEBAPP-NAME: eshoponweb-webapp-NAME
-
+creds: ${{ secrets.AZURE_CREDENTIALS }}
+on: workflow_dispatch:
 
 jobs:
   #Build, test and publish .net web project in repository
