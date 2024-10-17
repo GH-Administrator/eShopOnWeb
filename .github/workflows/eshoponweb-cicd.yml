@@ -10,7 +10,6 @@ env:
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: 3b04f7ba-57bd-460f-af8f-4a47b8555900
   WEBAPP-NAME: devops-webapp-westeurope-3275732373
-creds: ${{ secrets.AZURE_CREDENTIALS }}
 
 jobs:
   #Build, test and publish .net web project in repository
